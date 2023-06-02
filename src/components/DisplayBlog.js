@@ -6,6 +6,12 @@ import {db} from '../firebase';
 import { Route,Routes } from 'react-router-dom';
 const DisplayBlog = () =>
 {
+    const myStyle = {
+       
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '30vh',};
     const [blogs, setBlogs] = useState([]);
     //to view effects/changes as soon as they are made   
     useEffect(() => {
@@ -31,11 +37,12 @@ const DisplayBlog = () =>
             {blogs.length === 0 ? (<p>No blogs found</p>) : (blogs.map
                 ((blog)=><div className="blog-cont" key={blog.id}>
                     <div className="section1">
-                        <p>{blog.title}</p>
-                        <p>Created by- {blog.createdby}</p>
+                        <p className="title">{blog.title}</p>
+                        <p className="cby">Created by- {blog.createdby}</p>
                     </div>
+                    <hr/>
                     <div className="section2">
-                        <p><img src={blog.img}></img></p>
+                        <p><img style={myStyle} src={blog.img}></img></p>
                         <p>{blog.desc}</p>
                     </div>
                     <div className="section3">

@@ -84,6 +84,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import EditBlog from './components/EditBlog';
 import DisplayBlog from './components/DisplayBlog';
+import Login from './components/Login';
+import './App.css';
+import Signup from './components/Signup';
+
 
 const App = () => {
   return (
@@ -93,6 +97,8 @@ const App = () => {
       <Routes>
         <Route path="/postblog" element={<EditBlog/>} />
         <Route path="/display" element={<DisplayBlog/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Signup" element={<Signup/>} />
       </Routes>
     </Router>
     

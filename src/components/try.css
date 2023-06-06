@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: blue; /* Example background color */
+    color: white; /* Example text color */
+  }
+  

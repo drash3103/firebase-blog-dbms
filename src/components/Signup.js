@@ -90,9 +90,11 @@ const Signup = () => {
   };
 
   return (
-    <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'center',minHeight: '100vh'
+    <div style={{ background: 'rgb(245,226,252)',
+    background: 'linear-gradient(23deg, rgba(245,226,252,0.7301514355742297) 0%, rgba(251,245,220,1) 80%, rgba(251,251,251,0.8758096988795518) 100%)'}}>
+        <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'center',minHeight: '70vh'
   }}>
-      <div style={{fontSize:"40px", fontWeight:"bold"}}>
+      <div style={{fontSize:"40px", fontWeight:"bold",marginBottom:'10px'}}>
       Signup
       </div>
       <form onSubmit={handleSignup} >
@@ -125,6 +127,9 @@ const Signup = () => {
         <button type="submit" style={{ borderRadius: "5px", alignSelf: "left", backgroundColor:"#8bb1b5" }}>Signup</button>
       </form>
     </div>
+
+    </div>
+  
   );
 };
 

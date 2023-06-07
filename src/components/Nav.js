@@ -243,8 +243,8 @@ const Nav = () => {
                     border: 'none',
                     cursor: 'pointer',
                     padding: '10px 20px',
-                    fontSize: '20px',
-                    borderRadius: '5px',
+                    fontSize: '15px',
+                    borderRadius: '15px',
                   }}
                 >
                   Logout

@@ -477,7 +477,7 @@ const DisplayBlog = () => {
                 <button
                   type="button"
                   onClick={() => handleBlogDelete(blog.id)}
-                  style={{ marginTop: '10px', backgroundColor: '#ff9999', color: 'white', borderRadius: '5px' }}
+                  style={{ marginTop: '10px', backgroundColor: '#ff9999', color: 'white', borderRadius: '5px',marginLeft:'70rem', fontSize:'15px' }}
                 >
                   Delete Blog
                 </button>

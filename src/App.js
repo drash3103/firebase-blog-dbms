@@ -13,12 +13,13 @@ const App = () => {
       <Router>
         <Nav />
         <Routes>
+        <Route path="/Home" element={<Home />} />
           <Route path="/postblog" element={<EditBlog />} />
           <Route path="/display" element={<DisplayBlog />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/logout" element={<Logout />} /> {/* Add this route for the Logout component */}
-          <Route path="/Home" element={<Home />} />
+         
         </Routes>
       </Router>
     </>
